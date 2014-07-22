@@ -5,9 +5,9 @@ body{
   padding:0;
   background-color: #ffffff;
 }
-{
 
-}
+/* Navigation bar CSS */
+
 
 .top-nav{
   position:fixed;
@@ -144,4 +144,71 @@ body{
   .top-nav li.is-active a:before{
     display: none;
   }
+
+  /* Slider CSS */
+
+  .container{
+    position:relative;
+
+
+  }
+
+.slide.is-active{
+    display:block;
+  }
+  .slider{
+    list-style: none;
+
+
+
+  }
+
+  .slider ul{
+
+
+  }
+
+  .slide{
+    display:none;
+    }
   
+  .is-active{
+
+
+  }
+
+  .slider-nav{
+    position:absolute;
+    top:49%;
+    width:100%;
+    
+
+  }
+
+  .slider-prev{
+    position:relative;
+    float:left;
+    padding-left: 20px;
+
+
+
+  }
+
+  .slider-next{
+    position:relative;
+    float:right;
+    padding-right: 20px;
+
+
+  }
+  
+  .slide img{
+    width:100%;
+  }
+
+  .slider ul{
+    padding-left: 0
+  }
+  .slide.is-active{
+    display:block;
+  }
