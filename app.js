@@ -44,6 +44,25 @@ $(function () {
     $nextSlide.addClass('is-active');
   };
 
+var $slider = $('.slider');
+
+
+  function onPreviousBtnClick () {
+    var $currentSlide   = $slider.find('.slide.is-active');
+    var $nextSlide;      
+
+    if ($currentSlide.is(':first-child')) {
+      $nextSlide = $slider.find('li:last-child');
+    }else{
+      $nextSlide = $currentSlide.prev();
+    }
+
+    $currentSlide.removeClass('is-active');
+    $nextSlide.addClass('is-active');
+
+    
+  };
+
 
   // 1. go back
   // 2. goto(n) should show the nth image instead of (n-1)th, 
@@ -62,6 +81,8 @@ $(function () {
   window.goto = goto;
 
   $('.slider-next').on('click', onNextBtnClick);
+  $('.slider-prev').on('click', onPreviousBtnClick);
+
 
 
 

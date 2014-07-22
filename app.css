@@ -152,6 +152,7 @@ body{
 
   .container{
     position:relative;
+    overflow:hidden;
 
 
   }
@@ -173,6 +174,7 @@ body{
 
   .slide{
     display:none;
+
     }
   
   .is-active{
@@ -210,5 +212,17 @@ body{
   }
 
   .slide.is-active{
-    display:block;
+ -webkit-animation: test-animation .7s ease both;
   }
+
+  
+   @-webkit-keyframes test-animation{
+  0%{
+    -webkit-transform: translateX(400px);
+  }
+  
+  
+  100%{
+    -webkit-transform: translateX(0);
+  }
+}
