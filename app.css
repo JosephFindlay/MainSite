@@ -144,6 +144,9 @@ body{
   .top-nav li.is-active a:before{
     display: none;
   }
+}
+
+
 
   /* Slider CSS */
 
@@ -158,7 +161,7 @@ body{
   }
   .slider{
     list-style: none;
-
+    padding: 0;
 
 
   }
@@ -206,9 +209,6 @@ body{
     width:100%;
   }
 
-  .slider ul{
-    padding-left: 0
-  }
   .slide.is-active{
     display:block;
   }
